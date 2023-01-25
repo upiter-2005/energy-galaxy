@@ -123,3 +123,13 @@ export const pricePlanet = {
   5: 25000,
   6: 62500,
 };
+
+export const pricePlanetEssent = {
+  0: 111,
+  1: 222,
+  2: 333,
+  3: 444,
+  4: 555,
+  5: 25000,
+  6: 62500,
+};
