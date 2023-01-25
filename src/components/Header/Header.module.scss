@@ -1,0 +1,110 @@
+.header{
+    position: relative;
+    max-width: 1400px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 5px 25px;
+    z-index: 2;
+    .logo{max-width: 270px;
+        img{
+            width: 100%;
+        }
+    }
+    .interactiveBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../../public/img/header-center.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        height: 73px;
+    }
+    .connectBlock{
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 6px;
+    }
+    .connectWallet{
+        width: 260px;
+        background-color: transparent;
+        background-image: url('../../../public/img/connect.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        color: #5BF9FC;
+        font-size: 24px;
+        font-family: 'Teko', sans-serif;
+        padding: 45px 61px 57px;
+        text-align: left;
+        margin-right: 0;
+          cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+    .telegramm{
+        position: relative;
+        top: -2px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .header{
+        justify-content: center;
+    }
+    .logo{
+        order: 1;
+        width: 48%;
+    }
+    .interactiveBlock{
+        order: 3;
+        
+    }
+    .connectBlock{
+        order: 2;
+        width: 48%;
+    }
+  }
+ 
+  @media (max-width: 768px) {
+    .header{
+        margin-bottom: 50px;
+    .interactiveBlock{
+            width: 365px;
+        }
+        .connectBlock{
+            top: 0;
+        }
+        .connectWallet{
+            background-image: url('../../../public/img/mob-connect.png');
+            padding: 31px 44px 18px;
+            font-size: 16px;
+            position: relative;
+            top: 13px;
+            margin: 0;
+        }
+        .logo{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+  }
+  @media (max-width: 405px) {
+    .header{
+        .connectWallet{
+            top: 7px;
+        }
+    }
+    
+  }

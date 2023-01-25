@@ -1,0 +1,191 @@
+.modalPopup{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background-color: rgba(0,0,0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .modalPopup_window{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(../../../public/img/popup1.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center ;
+        position: relative;
+        max-width: 560px;
+        width: 100%;
+        height: 435px;
+        padding-top: 169px;
+        .close{
+            position: absolute;
+            width: 50px;
+            right: 14px;
+            top: 138px;
+              cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+            transition: all .3s ease;
+        }
+        .close:hover{
+            transform: scale(1.15);
+        }
+        .balanceBNB{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            top: 20px;
+            .balanceBNB_fon{
+                //background-image: url(../../../public/img/m1.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: block;
+                width: 290px;
+                height: 100px;
+                margin: 0 auto;
+                position: relative;
+                span{
+                    position: absolute;
+                    top: 63%;
+                    left: 50%;
+                    color: #FABA10;
+                }
+            }
+        }
+        .changing{
+            width: 74%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 0 40px;
+            .buyEssentials{
+                display: block;
+                background-color: transparent;
+                border: none;
+                width: 180px;
+                height: 130px;
+                background-image: url(../../../public/img/buy-btn.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                top: 55px;
+                left: 20px;
+                  cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+                transition: all .3s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
+
+            }
+            .changing_fields{
+                width: 303px;
+                height: 136px;
+                //background-image: url(../../../public/img/ch-fon.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                 input[type=number]{
+                    font-family: Teko, sans-serif;
+                    font-weight: 600;
+                    padding: 4px 0;
+                    width: 85%;
+                    background: transparent;
+                    border: none;
+                    background-color: rgb(154, 154, 154);
+                    color: #fff;
+                    margin:  0 4px;
+                    text-align: center;
+                    border: none;
+                    background: transparent;
+                    outline: none;
+                    appearance: textfield;
+                    font-size: 26px;
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button{
+                        appearance: none;
+                        margin: 0;
+                    }
+                    &::placeholder{
+                        color: #44ed71;
+                    }
+                }
+                .fromBnb{
+                    color: #FABA10!important;
+                    font-weight: 800;
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+
+                }
+                .toGem{
+                    color: #BD2078!important;
+                    font-weight: 800;
+                    position: absolute;
+                    bottom: -23px;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+
+                }
+            }
+           
+        }
+        
+    }
+}
+
+@media (max-width: 768px){
+    .modalPopup{
+        .modalPopup_window{
+            max-width: 380px;
+            width: 100%;
+            height: 350px;
+            .close{
+                width: 38px;
+                top: 144px;
+                right: 5px;
+            }
+            .balanceBNB_fon{
+                top: -27px;
+                span{
+                    font-size: 16px;
+                    left: 49%!important;
+                    top: 63%!important;
+                }
+            }
+            .changing{
+                align-items: flex-start;
+                position: relative;
+                top: -16px;
+                .changing_fields{
+                    height: 118px!important;
+                    top: -38px;
+                    input[type=number]{
+                        padding: 13px 0;
+                        font-size: 18px;
+                        &::placeholder{
+                            color:#FABA10;
+                        }
+                    }
+                }
+                .buyEssentials{
+                    height: 70px!important;
+                    top: 38px;
+                    left: 7px;
+                }
+            }
+           
+        }
+    }
+}

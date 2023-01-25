@@ -1,0 +1,111 @@
+.modalPopup{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background-color: rgba(0,0,0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: url("../../../public/img/cursor.svg") 4 12, auto ;
+    &_list{
+        margin: 160px auto 40px;
+        text-align: center;
+        width: 100%;
+        .infoStripe_violet{
+            color: #CE86EB;
+        }
+        .infoStripe_red{
+            color: #FA3A10;
+        }
+        .infoStripe_green{
+            color: #10FAC2;
+        }
+        .infoStripe_gold{
+            color: #FABA10;
+        }
+        .infoStripe{
+            max-width: 540px;
+            margin: 1px auto;
+            width: 100%;
+            background-image: url(../../../public/img/info-stripe.png);
+            background-size: cover;
+            background-position: center -15px ;
+            background-repeat: no-repeat;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span{
+                display: flex;
+                align-items: center;
+                margin: 0 80px;
+                img{
+                    width: 28px;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+
+    }
+    .modalPopup_window{
+        background-image: url(../../../public/img/statistic-fon.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center ;
+        position: relative;
+        max-width: 700px;
+        width: 100%;
+        height: 488px;
+        
+        .close{
+            position: absolute;
+            width: 60px;
+            right: 34px;
+            top: 54px;
+            cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto!important ;
+            transition: all .3s ease;
+        }
+        
+        .close:hover{
+            transform: scale(1.1);
+            cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto!important ;
+        }
+        
+    }
+}
+
+@media(max-width: 768px){
+    .modalPopup{
+        &_list{
+            margin-top: 190px;
+        }
+        .modalPopup_window{
+            .infoStripe{
+                padding: 0 20px;
+                max-width: 360px;
+                box-sizing: border-box;
+                height: 34px;
+                font-size: 14px;
+                span{
+                    margin: 0 32px;
+                    img{
+                        width: 25px;
+                    }
+                }
+            }
+            .close{
+                width: 36px;
+                top: 133px;
+                right: 8px;
+            }
+        }
+    }
+}

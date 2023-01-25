@@ -1,0 +1,63 @@
+.sell{
+    position: relative;
+    top: 3px;
+    width: 190px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('../../../public/img/bt-right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    img{
+        margin-right: 10px;
+        width: 48px;
+        position: relative;
+        top: 6px;
+    }
+    span{
+        //margin-right: 48px;
+        position: relative;
+        top: 6px;
+        color: #FABA10;
+        font-size: 24px;
+    }
+    .sellEssentials{
+        position: absolute;
+        top: 67px;
+        width: 90px;
+        height: 38px;
+        right: 40px;
+        transform: translate(-50%, 0);
+        //background-image: url('../../../public/img/sell.svg');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+          cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+        transition: all .3s ease;
+        &:hover img{
+            transform: scale(1.15);
+        }
+        img{
+            width: 90px;
+            height: 38px;
+            transition: all .3s ease;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sell{
+        background-size: contain;
+       
+        img{
+            margin-right: 25px;
+            width: 40px;
+            top: 4px;
+        }
+        .sellEssentials{
+            right: 18px;
+        }
+    }
+  }

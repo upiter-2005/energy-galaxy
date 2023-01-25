@@ -1,0 +1,111 @@
+.claim{
+    width: 288px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .claim_topFon{
+        background-image: url('../../../public/img/top-fon.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+        height: 166px;
+        width: 312px;
+        margin-bottom: 10px;
+    }
+    .claim_persent{
+        background-image: url('../../../public/img/persent.png');
+        background-repeat: no-repeat;
+        background-position: 30px center;
+        font-size: 24px;
+        color: #00F9FD;
+        padding-top: 31px;
+        padding-bottom: 26px;
+        padding-left: 172px;
+        padding-right: 44px;
+        position: relative;
+        overflow: hidden;
+        position: relative;
+        .scale{
+            width: 160px;
+            height: 55px;
+            position: absolute;
+            left: 37px ;
+            top: 30px;
+            text-align: left;
+            &_value{
+                position: absolute;
+                margin-left: 14px;
+                //width: 77%;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-image: url(../../../public/img/scale.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    &_essentials{
+        position: relative;
+        top: 20px;
+        background-image: url(../../../public/img/essperday.png);
+        background-repeat: no-repeat;
+        background-position: 40px ;
+        padding-top: 33px;
+        padding-bottom: 12px;
+        color: #FABA10;
+        font-size: 24px;
+        padding-left: 41px;
+    }
+    .claim_buts{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        background-image: url(../../../public/img/buts-fon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 135px;
+        width: 100%;
+        
+
+        button{
+            position: relative;
+            top: 16px;
+            left: 21px;
+            background: none;
+            border: none;
+              cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+            transition: all .3s ease;
+            &:last-child{
+                left: 25px;
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .claim{
+        position: relative;
+        width: auto;
+        .claim_buts{
+
+            button{
+                top: 16px;
+                left: 10px;
+                transition: all .3s ease;
+                &:last-child{
+                    left: 18px;
+                }
+               
+            }
+        }
+    }
+ 
+}

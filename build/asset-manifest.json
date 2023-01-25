@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "./static/css/main.c1f363d6.css",
+    "main.js": "./static/js/main.3330e6b2.js",
+    "static/media/scale.svg": "./static/media/scale.cb2e850f09d91f5e0a7f.svg",
+    "static/media/Teko-SemiBold.ttf": "./static/media/Teko-SemiBold.724eb0b1a36d7ef5af54.ttf",
+    "static/media/stars.svg": "./static/media/stars.5a46f88b1e9317c2438c.svg",
+    "static/media/claim-bg.webp": "./static/media/claim-bg.148f84dfbbbf3dc0347a.webp",
+    "static/media/buts-fon.png": "./static/media/buts-fon.df53924a9c5fbedbe679.png",
+    "static/media/info-fon.png": "./static/media/info-fon.6ec8624fdee10e54cf65.png",
+    "static/media/top-fon.png": "./static/media/top-fon.5b83f7eedbab94806100.png",
+    "static/media/referal-bg.webp": "./static/media/referal-bg.4cd50d3349ebb254e250.webp",
+    "static/media/bg-withdraw.webp": "./static/media/bg-withdraw.81dbe89ccf2db34d9733.webp",
+    "static/media/reinvest-bg.webp": "./static/media/reinvest-bg.9ee09f694d444ed2fa36.webp",
+    "static/media/popup1.webp": "./static/media/popup1.be487c1185cc734cbec9.webp",
+    "static/media/leaving.png": "./static/media/leaving.0dd588e280d179119883.png",
+    "static/media/mob-connect.png": "./static/media/mob-connect.9453c7468637869ed409.png",
+    "static/media/metamaskAlert.webp": "./static/media/metamaskAlert.aee13440d773fdb70af9.webp",
+    "static/media/info-frame.webp": "./static/media/info-frame.158163ee1b9157ab49dd.webp",
+    "static/media/li-bg.svg": "./static/media/li-bg.0f3bf7bc88bd5cf616fc.svg",
+    "static/media/bt-right.png": "./static/media/bt-right.9c6aff700b2b9a2c73fb.png",
+    "static/media/bt-left.png": "./static/media/bt-left.69a0f1cd7d8505ebf096.png",
+    "static/media/statistic-fon.webp": "./static/media/statistic-fon.05ebeb61b7786b7ef9b0.webp",
+    "static/media/info-stripe.png": "./static/media/info-stripe.0e750ea46fc4fe10789c.png",
+    "static/media/connect.png": "./static/media/connect.7af4c35b2d5ac7824a53.png",
+    "static/media/persent.png": "./static/media/persent.7822c4789902df810503.png",
+    "static/media/essperday.png": "./static/media/essperday.c50f327df78bb5cf2455.png",
+    "static/media/LoadFrame.png": "./static/media/LoadFrame.5150246fa7a1d2c8b6f7.png",
+    "static/media/header-center.png": "./static/media/header-center.8446a9b2850e84bc786f.png",
+    "static/media/сursorBlue.svg": "./static/media/сursorBlue.fb1282dc8f786f89dc3f.svg",
+    "static/media/cursor.svg": "./static/media/cursor.8fbe469ad3792ce8184d.svg",
+    "index.html": "./index.html",
+    "main.c1f363d6.css.map": "./static/css/main.c1f363d6.css.map",
+    "main.3330e6b2.js.map": "./static/js/main.3330e6b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1f363d6.css",
+    "static/js/main.3330e6b2.js"
+  ]
+}

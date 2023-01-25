@@ -1,0 +1,61 @@
+.galaxy-app {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center top;
+  color: #fbfbfb;
+  font-size: 20px;
+  
+}
+.planetBox_3{
+  position: relative;
+  top: 0;
+}
+.ownable{
+  margin-top: 50px;
+}
+.fadeOut{
+  animation: preloader 1s ease-out 1s
+}
+@keyframes preloader {
+  from {
+    opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media(max-width: 786px){
+  .planetBox_1{
+    order: 1;
+  }
+  .planetBox_2{
+    order: 2;
+  }
+  .planetBox_3{
+    order: 3;
+  }
+  .planetBox_4{
+    order: 4;
+  }
+  .planetBox_5{
+    order: 5;
+  }
+  .planetBox_6{
+    order: 6;
+  }
+  .planetBox_7{
+    order: 7;
+  }
+}

@@ -1,0 +1,171 @@
+.modalPopup{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background-color: rgba(0,0,0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .modalPopup_window{
+        background-image: url(../../../public/img/claim-bg.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center ;
+        position: relative;
+        width: 560px;
+        height: 435px;
+        
+        .close{
+            position: absolute;
+            width: 50px;
+            right: 14px;
+            top: 54px;
+              cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+            transition: all .3s ease;
+        }
+        .close:hover{
+            transform: scale(1.15);
+        }
+        .modalPopup_absBlock{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            bottom: 65px;
+            left: 0;
+            // .realEss{
+            //     position: absolute;
+            //     top: -22px;
+            //     right: 187px;
+            // }
+            .modalPopup_blockCenter{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                top: -24px;
+                &_img{
+                    width: 50%;
+                }
+                .realEss{
+                    width: 50%;
+                    background-image:url(../../../public/img/Frame.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    text-align: center;
+                    padding: 6px;
+                    color: #A1CEFF;
+                }
+            }
+            .modalPopup_tokensAmount{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                top: -80px;
+                div{
+                    text-align: center;
+                    width: 100%;
+                    color: #FABA10;
+                    font-weight: 600;
+                    font-size: 26px;
+                }
+            }
+            .modalPopup_buts{
+                margin-top: 2px;
+                width: 80%;
+                display: flex;
+                justify-content: space-around;
+                button{
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                      cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+                    transition: all .3s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    img{
+                        max-width: 200px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .modalPopup{
+        .modalPopup_window{
+            max-width: 380px;
+            width: 100%;
+           
+
+            // .realEss{
+            //     position: absolute;
+            //     top: -7px!important;
+            //     right: 120px!important;
+            // }
+            .modalPopup_absBlock{
+                bottom: 87px;
+                .modalPopup_tokensAmount{
+                    top: -45px;
+                    position: relative;
+                }
+                div{
+                    font-size: 18px!important;
+                }
+            }
+            
+            .modalPopup_buts{
+                margin-top: 0;
+                position: relative;
+                top: -23px!important;
+                button{
+                    max-width: 170px!important;
+                    width: auto;
+                    img{
+                        width: 100%!important;
+                    }
+                }
+            }
+            .modalPopup_blockCenter{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                top: -14px!important;
+                &_img{
+                    width: 50%;
+                }
+                .realEss{
+                    width: 50%;
+                    background-image:url(../../../public/img/Frame.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain!important;
+                    text-align: center;
+                    padding: 6px;
+                    color: #A1CEFF;
+                }
+            }
+            .close{
+                width: 38px;
+                top: 105px;
+                right: 5px;
+            }
+         
+        }
+    }
+}

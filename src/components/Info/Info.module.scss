@@ -1,0 +1,104 @@
+.infoBox{
+    position: relative;             
+    max-width: 1400px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    .infoBox_general{
+        padding: 82px 0 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image: url('../../../public/img/info-fon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 100% top;
+        cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+    }
+    .infoBox_link{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 10px;
+          cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+        .infoBox_link_title{
+            display: none;
+            position: relative;
+            left: -20px;
+            cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+        }
+        &:hover .infoBox_link_title{
+            display: inline;
+            cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+        }
+    }
+    .infoBox_list{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 150;
+        &Item{
+            color: #5BF9FC;
+            //background-color: rgba(55,55,55, .5);
+            background-image: url('../../../public/img/li-bg.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 36px 0px;
+            width: 256px;
+            position: relative;
+            bottom: 20px;
+            cursor: url("../../../public/img/сursorBlue.svg") 4 12, auto ;
+            &:first-child{
+                bottom: 0px;
+            }
+            &:nth-child(2n){
+                bottom: 30px;
+            }
+            &:nth-child(3n){
+                bottom: 60px;
+            }
+            &:nth-child(4n){
+                bottom: 90px;
+            }
+            span{
+                position: relative;
+                top: 7px;
+            }
+            span:first-child{
+                margin-left: 30px;
+            }
+            span:last-child{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+.overlay{
+    z-index: 2;
+}
+.overlayStatus{
+    z-index: 0;
+}
+@media (max-width: 768px) {
+    .infoBox{
+        justify-content: center;
+        margin-bottom: 75px;
+        .infoBox_general{
+            display: none;
+        }
+    }
+    
+  }

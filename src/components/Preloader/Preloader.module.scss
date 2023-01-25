@@ -1,0 +1,62 @@
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: url(../../../public/img/stars.svg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: 3000;
+    opacity: 1;
+    
+}
+.preloaderDesktop{
+
+}
+.preloaderMobile{
+    display: none;
+}
+.videoBox{
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3000;
+    opacity: 1;
+    //animation: puls 8s ease-in-out 0s
+}
+.waving{
+    animation: puls 1s ease-out 1s
+}
+
+
+@keyframes puls {
+    from {
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    10%{
+        transform: scale(1);
+    }
+  }
+
+  @media (max-width: 778px) {
+    .videoBox{
+        width: 100%;
+        height: 100vh;
+    }
+    .preloader{
+        object-fit: contain;
+    }
+    .preloaderDesktop{
+        display: none;
+    }
+    .preloaderMobile{
+        display: block;
+    }
+  }

@@ -1,0 +1,91 @@
+.infoBottom{
+    position: relative;             
+    max-width: 1400px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto ;
+    justify-content: space-between;
+    z-index: 1;
+    display: none;
+    .infoBox_general{
+        padding: 82px 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 67%;
+        margin: 0 auto;
+    }
+    .infoBox_link{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 10px;
+        cursor: pointer;
+        .infoBox_link_title{
+            display: none;
+            position: relative;
+            left: -20px;
+        }
+        &:hover .infoBox_link_title{
+            display: inline;
+        }
+    }
+    .infoBox_list{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 150;
+        &Item{
+            color: #5BF9FC;
+            //background-color: rgba(55,55,55, .5);
+            background-image: url('../../../public/img/li-bg.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 36px 0px;
+            width: 256px;
+            position: relative;
+            bottom: 20px;
+            &:first-child{
+                bottom: 0px;
+            }
+            &:nth-child(2n){
+                bottom: 30px;
+            }
+            &:nth-child(3n){
+                bottom: 60px;
+            }
+            &:nth-child(4n){
+                bottom: 90px;
+            }
+            span{
+                position: relative;
+                top: 7px;
+            }
+            span:first-child{
+                margin-left: 30px;
+            }
+            span:last-child{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .infoBottom{
+        display: flex;
+    }
+    .infoBox{
+        justify-content: center;
+        .infoBox_general{
+            display: none;
+        }
+    }
+    
+  }
